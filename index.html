@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Application</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <section class="main">
+        <div class="container" id="quizContainer">
+            <div class="question" data-correct="1995">
+                <h3>1) When was Java founded?</h3>
+                <div class="col box">
+                    <input name="q1" type="radio" id="q1a" value="1991" required>
+                    <label for="q1a">1991</label>
+                </div>
+                <div class="col box">
+                    <input name="q1" type="radio" id="q1b" value="1995" required>
+                    <label for="q1b">1995</label>
+                </div>
+                <div class="col box">
+                    <input name="q1" type="radio" id="q1c" value="2000" required>
+                    <label for="q1c">2000</label>
+                </div>
+                <div class="col box">
+                    <input name="q1" type="radio" id="q1d" value="2005" required>
+                    <label for="q1d">2005</label>
+                </div>
+            </div>
+            <div class="question" data-correct="Tim Berners-Lee">
+                <h3>2) Who invented the World Wide Web?</h3>
+                <div class="col box">
+                    <input name="q2" type="radio" id="q2a" value="Bill Gates" required>
+                    <label for="q2a">Bill Gates</label>
+                </div>
+                <div class="col box">
+                    <input name="q2" type="radio" id="q2b" value="Steve Jobs" required>
+                    <label for="q2b">Steve Jobs</label>
+                </div>
+                <div class="col box">
+                    <input name="q2" type="radio" id="q2c" value="Tim Berners-Lee" required>
+                    <label for="q2c">Tim Berners-Lee</label>
+                </div>
+                <div class="col box">
+                    <input name="q2" type="radio" id="q2d" value="Mark Zuckerberg" required>
+                    <label for="q2d">Mark Zuckerberg</label>
+                </div>
+            </div>
+            <div class="question" data-correct="1991">
+                <h3>3) When was Linux first released?</h3>
+                <div class="col box">
+                    <input name="q3" type="radio" id="q3a" value="1989" required>
+                    <label for="q3a">1989</label>
+                </div>
+                <div class="col box">
+                    <input name="q3" type="radio" id="q3b" value="1991" required>
+                    <label for="q3b">1991</label>
+                </div>
+                <div class="col box">
+                    <input name="q3" type="radio" id="q3c" value="1995" required>
+                    <label for="q3c">1995</label>
+                </div>
+                <div class="col box">
+                    <input name="q3" type="radio" id="q3d" value="1997" required>
+                    <label for="q3d">1997</label>
+                </div>
+            </div>
+            <div class="question" data-correct="Google">
+                <h3>4) Which company developed the Android operating system?</h3>
+                <div class="col box">
+                    <input name="q4" type="radio" id="q4a" value="Apple" required>
+                    <label for="q4a">Apple</label>
+                </div>
+                <div class="col box">
+                    <input name="q4" type="radio" id="q4b" value="Microsoft" required>
+                    <label for="q4b">Microsoft</label>
+                </div>
+                <div class="col box">
+                    <input name="q4" type="radio" id="q4c" value="Google" required>
+                    <label for="q4c">Google</label>
+                </div>
+                <div class="col box">
+                    <input name="q4" type="radio" id="q4d" value="IBM" required>
+                    <label for="q4d">IBM</label>
+                </div>
+            </div>
+            <div class="question" data-correct="HyperText Markup Language">
+                <h3>5) What does HTML stand for?</h3>
+                <div class="col box">
+                    <input name="q5" type="radio" id="q5a" value="HighText Machine Language" required>
+                    <label for="q5a">HighText Machine Language</label>
+                </div>
+                <div class="col box">
+                    <input name="q5" type="radio" id="q5b" value="HyperText and links Markup Language" required>
+                    <label for="q5b">HyperText and links Markup Language</label>
+                </div>
+                <div class="col box">
+                    <input name="q5" type="radio" id="q5c" value="HyperText Markup Language" required>
+                    <label for="q5c">HyperText Markup Language</label>
+                </div>
+                <div class="col box">
+                    <input name="q5" type="radio" id="q5d" value="None of these" required>
+                    <label for="q5d">None of these</label>
+                </div>
+            </div>
+            <button id="prev">Previous</button>
+            <button id="next">Next</button>
+            <button id="submit" style="display:none;">Submit</button>
+        </div>
+    </section>
+    <section class="result" style="display:none;">
+        <div class="container">
+            <h2>Quiz Results</h2>
+            <p id="score"></p>
+            <button id="retry">Retry</button>
+        </div>
+    </section>
+    <script src="app.js"></script>
+</body>
+
+</html>
